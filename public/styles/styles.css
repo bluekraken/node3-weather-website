@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1.6rem;
+    max-width: 65rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 0 1.6rem;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: #888;
+    border-top: 1px solid #eee;
+    margin-top: 1.6rem;
+    padding: 1.6rem 0;
+}
+
+header {
+    margin-top: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1.6rem;
+}
+
+nav a {
+    color: #888;
+    margin-right: 1.6rem;
+    text-decoration: none;
+}
+
+.portrait {
+    width: 32rem;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+}
+
+button {
+    color: #333;
+    cursor: pointer;
+    border: 1px solid #888;
+    background: orange;
+    padding: 0.8rem;
+}

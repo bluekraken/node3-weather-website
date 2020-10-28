@@ -1,0 +1,13 @@
+{
+  "name": "web-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Andrew Hearse",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "express": "^4.17.1",
+    "got": "^11.8.0",
+    "hbs": "^4.1.1"
+  }
+}
