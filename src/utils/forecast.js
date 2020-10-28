@@ -11,7 +11,8 @@ const forecast = async (latitude, longitude, callback) => {
             const description = data.current.weather_descriptions[0];
             const temperature = data.current.temperature;
             const feelsLike = data.current.feelslike;
-            callback(undefined, `${description}: it's ${temperature}C out, but it feels like ${feelsLike}C!`);
+            const humidity = data.current.humidity;
+            callback(undefined, `${description}. It's ${temperature}C out, but it feels like ${feelsLike}C!  The humidity is ${humidity}%.`);
         } else {
             callback(`${response.status} error`);
         }
