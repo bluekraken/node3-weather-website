@@ -5,12 +5,16 @@
   "author": "Andrew Hearse",
   "license": "MIT",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js -e js,hbs"
   },
   "dependencies": {
     "chalk": "^4.1.0",
     "express": "^4.17.1",
     "got": "^11.8.0",
     "hbs": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
