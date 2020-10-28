@@ -6,6 +6,7 @@ const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Setup handlebars engine and views location
 app.set('view engine', 'hbs');
@@ -85,7 +86,9 @@ app.get('*', (req, res) => {
     });
 });
 
+
+
 // Start the server
-app.listen(3000, () => {
-    console.log(chalk.yellow('Server started on port 3000.'));
+app.listen(port, () => {
+    console.log(chalk.yellow(`Server started on port ${port}.`));
 });
